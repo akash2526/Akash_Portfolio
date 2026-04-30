@@ -129,5 +129,5 @@ This project analyzes healthcare sales data to track performance across products
 
 ## 📬 Contact
 
-* LinkedIn: https://www.linkedin.com/in/akash-geeda/
+* LinkedIn: [Akash Geeda](https://www.linkedin.com/in/akash-geeda/)
 * Email: akashgeeda18@gmail.com
