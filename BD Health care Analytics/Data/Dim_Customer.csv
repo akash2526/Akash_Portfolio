@@ -1,0 +1,66 @@
+Customer_ID,Customer_Name,Customer_Type,Segment
+C001,Mayo BioPharma,Pharma,Large Pharma
+C002,Johns Hopkins Biotech,Pharma,Large Pharma
+C003,Cleveland University Hospital,Hospital,Specialty Clinic
+C004,Mass General Clinic,Hospital,Academic Medical Center
+C005,Stanford Drug Delivery,Pharma,Large Pharma
+C006,Cedars Health System,Hospital,Academic Medical Center
+C007,Mount Sinai Clinic,Hospital,Specialty Clinic
+C008,Northwestern Clinic,Hospital,Academic Medical Center
+C009,Duke Drug Delivery,Pharma,Large Pharma
+C010,Vanderbilt Clinical Lab,Lab,Independent Lab
+C011,UCSF Cancer Center,Hospital,Community Hospital
+C012,Brigham Genomics Center,Lab,Independent Lab
+C013,NYU Langone Research Institute,Lab,Independent Lab
+C014,Emory Research Institute,Lab,Hospital Lab
+C015,Penn Clinical Lab,Lab,Independent Lab
+C016,Houston Methodist Clinical Research,Pharma,CRO
+C017,Ochsner Cancer Center,Hospital,Academic Medical Center
+C018,Baylor Biotech,Pharma,CRO
+C019,Scripps Pharmaceuticals,Pharma,CRO
+C020,Rush Health System,Hospital,Academic Medical Center
+C021,Aurora Therapeutics,Pharma,Mid-size Biotech
+C022,Advocate General Hospital,Hospital,Academic Medical Center
+C023,Intermountain Clinical Lab,Lab,Hospital Lab
+C024,Providence Pharmaceuticals,Pharma,Large Pharma
+C025,Ascension Pathology Group,Lab,Independent Lab
+C026,HCA Biotech,Pharma,CRO
+C027,Tenet BioPharma,Pharma,CRO
+C028,CommonSpirit Life Sciences,Pharma,CRO
+C029,Trinity Therapeutics,Pharma,Large Pharma
+C030,Banner Laboratory Services,Lab,Hospital Lab
+C031,Mercy Therapeutics,Pharma,CRO
+C032,Novant BioLabs,Lab,Independent Lab
+C033,Sutter Children's Hospital,Hospital,Community Hospital
+C034,Kaiser Research Institute,Lab,Independent Lab
+C035,Geisinger Pharmaceuticals,Pharma,Large Pharma
+C036,WellStar Clinical Research,Pharma,Mid-size Biotech
+C037,Atrium Clinical Research,Pharma,Large Pharma
+C038,UH Genomics Center,Lab,Independent Lab
+C039,Hackensack Biotech,Pharma,CRO
+C040,Yale New Haven Drug Delivery,Pharma,CRO
+C041,Pacific Pathology Group,Lab,Independent Lab
+C042,Atlantic Clinic,Hospital,Community Hospital
+C043,Mountain Medical Center,Hospital,Academic Medical Center
+C044,Great Lakes University Hospital,Hospital,Specialty Clinic
+C045,Coastal Research Institute,Lab,Hospital Lab
+C046,Midwest Molecular Lab,Lab,Reference Lab
+C047,Southeast BioLabs,Lab,Reference Lab
+C048,Southwest BioPharma,Pharma,CRO
+C049,Northeast Biotech,Pharma,CRO
+C050,Northwest Research Institute,Lab,Hospital Lab
+C051,National Genomics Center,Lab,Hospital Lab
+C052,Premier Regional Hospital,Hospital,Specialty Clinic
+C053,Advanced Clinic,Hospital,Academic Medical Center
+C054,Integrated Biotech,Pharma,CRO
+C055,Precision Therapeutics,Pharma,Large Pharma
+C056,Global Genomics Center,Lab,Reference Lab
+C057,American Pharma,Pharma,CRO
+C058,International Molecular Lab,Lab,Independent Lab
+C059,United Children's Hospital,Hospital,Community Hospital
+C060,Allied Medical Center,Hospital,Academic Medical Center
+C061,TheraCure Medical Center,Hospital,Academic Medical Center
+C062,Helix BioLabs,Lab,Independent Lab
+C063,NovaMed Therapeutics,Pharma,Large Pharma
+C064,PrecisionPath Hospital,Hospital,Specialty Clinic
+C065,OmniGen Diagnostics,Lab,Reference Lab

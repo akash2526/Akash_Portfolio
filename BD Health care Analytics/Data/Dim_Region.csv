@@ -1,0 +1,31 @@
+Region_ID,Country,State,City,Region_Group
+R01,USA,California,San Francisco,Americas
+R02,USA,New York,New York City,Americas
+R03,USA,Texas,Houston,Americas
+R04,USA,Massachusetts,Boston,Americas
+R05,USA,Illinois,Chicago,Americas
+R06,Canada,Ontario,Toronto,Americas
+R07,Canada,Quebec,Montreal,Americas
+R08,Brazil,São Paulo,São Paulo,Americas
+R09,Mexico,CDMX,Mexico City,Americas
+R10,UK,England,London,EMEA
+R11,Germany,Bavaria,Munich,EMEA
+R12,France,Île-de-France,Paris,EMEA
+R13,Netherlands,North Holland,Amsterdam,EMEA
+R14,Switzerland,Zurich,Zurich,EMEA
+R15,Spain,Madrid,Madrid,EMEA
+R16,Italy,Lombardy,Milan,EMEA
+R17,UAE,Dubai,Dubai,EMEA
+R18,Saudi Arabia,Riyadh,Riyadh,EMEA
+R19,South Africa,Gauteng,Johannesburg,EMEA
+R20,Japan,Tokyo,Tokyo,APAC
+R21,China,Shanghai,Shanghai,APAC
+R22,China,Beijing,Beijing,APAC
+R23,India,Maharashtra,Mumbai,APAC
+R24,India,Karnataka,Bangalore,APAC
+R25,Australia,New South Wales,Sydney,APAC
+R26,South Korea,Seoul,Seoul,APAC
+R27,Singapore,Singapore,Singapore,APAC
+R28,Malaysia,Kuala Lumpur,Kuala Lumpur,APAC
+R29,Indonesia,Jakarta,Jakarta,APAC
+R30,Thailand,Bangkok,Bangkok,APAC

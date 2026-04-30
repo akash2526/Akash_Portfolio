@@ -1,0 +1,29 @@
+Product_ID,Product_Name,Product_Category,Sub_Category,Unit_Price
+P001,BD Vacutainer Blood Collection,Medical Devices,Blood Collection,4.5
+P002,BD Alaris Infusion Pump,Medical Devices,Infusion Systems,2800
+P003,BD Pyxis MedStation,Medical Devices,Medication Management,15000
+P004,BD Intevia Autoinjector,Medical Devices,Drug Delivery,320
+P005,BD Libertas Wearable Injector,Medical Devices,Drug Delivery,850
+P006,BD FACSCanto Flow Cytometer,Life Sciences,Flow Cytometry,45000
+P007,BD LSRFortessa Analyzer,Life Sciences,Flow Cytometry,72000
+P008,BD Influx Cell Sorter,Life Sciences,Cell Sorting,120000
+P009,BD PharmLyse Buffer,Life Sciences,Reagents,180
+P010,BD Cytometric Bead Array Kit,Life Sciences,Assay Kits,420
+P011,BD Max System,Life Sciences,Molecular Diagnostics,38000
+P012,BD BACTEC Blood Culture System,Life Sciences,Microbiology,22000
+P013,BD Phoenix Bacterial ID System,Life Sciences,Microbiology,35000
+P014,BD Rotarex Thrombectomy,Interventional,Vascular,1200
+P015,BD Lutonix Drug-Coated Balloon,Interventional,Vascular,1800
+P016,BD PowerPort Implantable Port,Interventional,Vascular Access,750
+P017,BD Prevue Peripheral Guidewire,Interventional,Endovascular,280
+P018,BD Sherlock 3CG PICC,Interventional,Vascular Access,920
+P019,BD Max Flow PICC,Interventional,Vascular Access,680
+P020,BD Venclose RF Ablation,Interventional,Vascular,2400
+P021,BD Uniject Prefillable System,Medical Devices,Drug Delivery,95
+P022,BD Viper LT Sheath,Interventional,Endovascular,340
+P023,BD COR MR-Conditional Pacemaker,Medical Devices,Cardiac,6500
+P024,BD MRI-Compatible Leads,Medical Devices,Cardiac,1200
+P025,BD Emerald Diagnostic Catheters,Interventional,Endovascular,210
+P026,BD COR IVD Automation System,Life Sciences,Lab Automation,85000
+P027,BD Onclarity HPV Assay,Life Sciences,Molecular Diagnostics,310
+P028,BD Veritor Plus Analyzer,Medical Devices,Point-of-Care,4200
