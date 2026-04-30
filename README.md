@@ -85,7 +85,9 @@ This project analyzes healthcare sales data to track performance across products
 
 ## 📸 Dashboard Preview
 
-(Add your dashboard screenshot here)
+<img width="1405" height="758" alt="Screenshot 2026-04-30 123441" src="https://github.com/user-attachments/assets/48ae644e-f446-4987-91cb-12858264361d" />
+<img width="1402" height="764" alt="Screenshot 2026-04-30 123524" src="https://github.com/user-attachments/assets/8f4d0c25-68e4-4355-bef1-f2eed92042f9" />
+<img width="1404" height="763" alt="Screenshot 2026-04-30 123536" src="https://github.com/user-attachments/assets/6724e7a5-c5a1-4410-b366-a4aeab65e9be" />
 
 ---
 
@@ -108,5 +110,5 @@ This project analyzes healthcare sales data to track performance across products
 
 ## 📬 Contact
 
-* LinkedIn: (Add your link)
-* Email: (Add your email)
+* LinkedIn: https://www.linkedin.com/in/akash-geeda/
+* Email: akashgeeda18@gmail.com
