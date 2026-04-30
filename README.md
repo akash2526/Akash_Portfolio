@@ -1,3 +1,14 @@
+# 📊 Akash Portfolio
+
+## 🚀 Projects
+
+👉 [BD Healthcare Dashboard](#bd-project)
+
+---
+
+
+<a name="bd-project"></a>
+
 # 🏥 BD Healthcare Analytics Dashboard (Power BI)
 
 End-to-end healthcare analytics project built using Power BI with a **Star Schema data model, 100+ DAX measures, and incremental data refresh**.
