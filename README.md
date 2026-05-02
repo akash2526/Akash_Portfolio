@@ -140,7 +140,8 @@ End-to-end data analytics project using **Python, SQL Server, and Power BI** to 
 
 ---
 
-Business Problem Statement 
+## Business Problem Statement 
+
 A leading retail company wants to better understand its customers’ shopping behavior in order 
 to improve sales, customer satisfaction, and long-term loyalty. The management team has 
 noticed changes in purchasing patterns across demographics, product categories, and sales 
@@ -258,7 +259,7 @@ Customer_Shopping_behavior_SQL_queries
 
 ## 📸 Dashboard Preview
 
-<img width="600" height="888" alt="image" src="https://github.com/user-attachments/assets/2cc7cd21-38e5-4779-8b47-a9c07ccd734f" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/2cc7cd21-38e5-4779-8b47-a9c07ccd734f" />
 
 
 ---
