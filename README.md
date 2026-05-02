@@ -1,3 +1,5 @@
+## 🔗 [View My GitHub Portfolio](https://github.com/akash2526/Akash_Portfolio)
+
 ## 🚀 Projects
 
 👉 [BD Healthcare Dashboard](#bd-project)  
