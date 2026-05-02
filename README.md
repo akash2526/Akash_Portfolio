@@ -259,7 +259,8 @@ Customer_Shopping_behavior_SQL_queries
 
 ## 📸 Dashboard Preview
 
-<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/2cc7cd21-38e5-4779-8b47-a9c07ccd734f" />
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/c24a9953-f0f3-410b-b96d-c7b8ec55f0d4" />
+
 
 
 ---
