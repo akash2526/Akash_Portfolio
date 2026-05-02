@@ -217,7 +217,7 @@ Key business questions solved:
 9. Revenue by age group
 
 
-👉 [View SQL Queries](./Customer_Shopping_behavior_SQL_queries.sql)
+👉 [View SQL Queries]([./Customer_Shopping_behavior_SQL_queries.sql)](https://github.com/akash2526/Akash_Portfolio/blob/d51ba895e626897d24bb9d21bcd9518768165c59/Customer%20Behavior%20Analytics/Customer_Shopping_behavior_SQL_queries.sql)
 
 ---
 
