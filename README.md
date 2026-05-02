@@ -216,6 +216,9 @@ Key business questions solved:
 8. Repeat buyers vs subscription
 9. Revenue by age group
 
+
+👉 [View SQL Queries](./Customer_Shopping_behavior_SQL_queries.sql)
+
 ---
 
 ## 📈 Power BI Dashboard
