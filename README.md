@@ -1,5 +1,3 @@
-# 📊 Akash Portfolio
-
 ## 🚀 Projects
 
 👉 [BD Healthcare Dashboard](#bd-project)  
@@ -259,7 +257,7 @@ Customer_Shopping_behavior_SQL_queries
 
 ## 📸 Dashboard Preview
 
-<img width="1000" height="700" alt="image" src="https://github.com/user-attachments/assets/c24a9953-f0f3-410b-b96d-c7b8ec55f0d4" />
+<img width="1100" height="700" alt="image" src="https://github.com/user-attachments/assets/c24a9953-f0f3-410b-b96d-c7b8ec55f0d4" />
 
 
 
