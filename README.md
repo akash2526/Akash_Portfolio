@@ -3,9 +3,10 @@
 ## 🚀 Projects
 
 👉 [BD Healthcare Dashboard](#bd-project)  
+
 👉 [Customer Behavior Analysis](#customer-project)
+
 👉 [Pizza Sales Analysis](#-pizza-sales-analysis)
----
 
 
 <a name="bd-project"></a>
@@ -273,8 +274,10 @@ Customer_Shopping_behavior_SQL_queries
 * SQL + Python integration
 * Business-driven storytelling
 
-# 🍕 Pizza Sales Analysis Dashboard --Project 3
 
+
+# 🍕 Pizza Sales Analysis Dashboard --Project 3
+#-pizza-sales-analysis
 ## 📊 Project Overview
 
 This project analyzes pizza sales data to uncover key business insights such as revenue trends, customer ordering behavior, and product performance. The dashboard is built using Power BI, with SQL used for data analysis and transformation.
