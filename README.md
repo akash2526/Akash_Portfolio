@@ -4,7 +4,7 @@
 
 👉 [BD Healthcare Dashboard](#bd-project)  
 👉 [Customer Behavior Analysis](#customer-project)
-
+👉 [Pizza Sales Analysis](#-pizza-sales-analysis)
 ---
 
 
@@ -272,6 +272,145 @@ Customer_Shopping_behavior_SQL_queries
 * End-to-end analytics workflow
 * SQL + Python integration
 * Business-driven storytelling
+
+# 🍕 Pizza Sales Analysis Dashboard --Project 3
+
+## 📊 Project Overview
+
+This project analyzes pizza sales data to uncover key business insights such as revenue trends, customer ordering behavior, and product performance. The dashboard is built using Power BI, with SQL used for data analysis and transformation.
+
+The goal of this project is to help businesses make data-driven decisions by identifying high-performing products, peak order times, and customer preferences.
+
+---
+
+## 🗂️ Dataset Description
+
+The dataset contains detailed information about pizza orders, including:
+
+### 🔹 Order Details
+
+* `order_details_id` – Unique identifier for each order line
+* `order_id` – Unique order number
+* `order_date` – Date of the order
+* `order_time` – Time of the order
+* `quantity` – Number of pizzas ordered
+
+### 🔹 Pricing Information
+
+* `unit_price` – Price per pizza
+* `total_price` – Total price per order line
+
+### 🔹 Pizza Details
+
+* `pizza_name` – Name of the pizza
+* `pizza_category` – Category (Classic, Veggie, Chicken, Supreme)
+* `pizza_size` – Size (S, M, L, XL, XXL)
+* `pizza_ingredients` – Ingredients used
+
+---
+
+## 📈 Key Metrics
+
+* 💰 **Total Revenue** – Overall sales generated
+* 📦 **Total Orders** – Number of unique orders
+* 🍕 **Total Pizzas Sold** – Total quantity sold
+* 📊 **Average Order Value (AOV)** – Revenue per order
+
+---
+
+## 📊 Dashboard Insights
+
+### ⏰ Sales Trends
+
+* Peak order times occur during **afternoon and evening hours**
+* Weekly trends show consistent demand with slight fluctuations
+
+### 🍕 Product Performance
+
+* **Classic category** contributes the highest revenue
+* **Large size pizzas** are the most preferred
+
+### 🥗 Customer Preferences
+
+* Certain pizza categories dominate sales
+* Ingredient-level analysis helps understand popular combinations
+
+---
+
+## 🛠️ Tools & Technologies
+
+* **SQL Server** – Data analysis and querying
+* **Power BI** – Data visualization and dashboard creation
+* **Excel/CSV** – Data source
+
+---
+
+## 🧠 SQL Analysis (Sample Queries)
+
+### 1. Total Revenue
+
+```sql
+SELECT SUM(total_price) AS total_revenue
+FROM pizza_sales;
+```
+
+### 2. Total Orders
+
+```sql
+SELECT COUNT(DISTINCT order_id) AS total_orders
+FROM pizza_sales;
+```
+
+### 3. Average Order Value
+
+```sql
+SELECT 
+    SUM(total_price) / COUNT(DISTINCT order_id) AS avg_order_value
+FROM pizza_sales;
+```
+
+### 4. Orders by Hour
+
+```sql
+SELECT 
+    DATEPART(HOUR, order_time) AS order_hour,
+    COUNT(DISTINCT order_id) AS total_orders
+FROM pizza_sales
+GROUP BY DATEPART(HOUR, order_time)
+ORDER BY order_hour;
+```
+
+### 5. Revenue by Category
+
+```sql
+SELECT 
+    pizza_category,
+    SUM(total_price) AS revenue
+FROM pizza_sales
+GROUP BY pizza_category
+ORDER BY revenue DESC;
+```
+## 📸 Dashboard Preview
+
+<img width="1100" height="750" alt="image" src="https://github.com/user-attachments/assets/a1bb543c-a86e-425d-98c8-664f1daab7d0" />
+
+---
+
+## 📌 Key Learnings
+
+* Handling data import issues and datatype mismatches
+* Writing efficient SQL queries for business analysis
+* Building interactive dashboards in Power BI
+* Extracting actionable insights from raw data
+
+---
+
+## 🚀 Conclusion
+
+This project demonstrates how SQL and Power BI can be combined to analyze sales data effectively. It provides valuable insights into customer behavior, product performance, and revenue trends, helping businesses optimize their strategy.
+
+---
+
 
 ## 📬 Contact
 
