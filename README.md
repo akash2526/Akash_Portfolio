@@ -262,8 +262,9 @@ Customer_Shopping_behavior_SQL_queries
 
 ## 📸 Dashboard Preview
 
-<img width="1100" height="700" alt="image" src="https://github.com/user-attachments/assets/c24a9953-f0f3-410b-b96d-c7b8ec55f0d4" />
-
+<p align="center">
+   <img src="https://github.com/user-attachments/assets/c24a9953-f0f3-410b-b96d-c7b8ec55f0d4" width="900"/>
+</p>
 
 
 ---
@@ -400,7 +401,9 @@ ORDER BY revenue DESC;
 ```
 ## 📸 Dashboard Preview
 
-<img width="1100" height="750" alt="image" src="https://github.com/user-attachments/assets/a1bb543c-a86e-425d-98c8-664f1daab7d0" />
+<p align="center">
+   <img src="https://github.com/user-attachments/assets/a1bb543c-a86e-425d-98c8-664f1daab7d0" width="900"/>
+</p>
 
 ---
 
