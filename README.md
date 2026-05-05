@@ -276,8 +276,7 @@ Customer_Shopping_behavior_SQL_queries
 
 
 
-# 🍕 Pizza Sales Analysis Dashboard --Project 3
-#-pizza-sales-analysis
+## 🍕 Pizza Sales Analysis --Project 3
 ## 📊 Project Overview
 
 This project analyzes pizza sales data to uncover key business insights such as revenue trends, customer ordering behavior, and product performance. The dashboard is built using Power BI, with SQL used for data analysis and transformation.
