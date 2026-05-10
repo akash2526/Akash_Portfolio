@@ -1,6 +1,6 @@
 # Akash_Portfolio
 Analytics Portfolio
-# 🏥 BD Healthcare Analytics Dashboard (Power BI)
+# 🏥 Healthcare Analytics Dashboard (Power BI)
 
 End-to-end healthcare analytics project built using Power BI with a **Star Schema data model, 100+ DAX measures, and incremental data refresh**.
 
