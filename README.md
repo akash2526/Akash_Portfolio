@@ -2,16 +2,16 @@
 
 ## 🚀 Projects
 
-👉 [BD Healthcare Dashboard](#bd-project)  
+👉 [Healthcare Analytics Dashboard](#Healthcare-project)  
 
 👉 [Customer Behavior Analysis](#customer-project)
 
 👉 [Pizza Sales Analysis](#-pizza-sales-analysis)
 
 
-<a name="bd-project"></a>
+<a name="Healthcare-project"></a>
 
-# 🏥 BD Healthcare Analytics Dashboard (Power BI)  --Project 1
+# 🏥 Healthcare Analytics Dashboard (Power BI)  --Project 1
 
 End-to-end healthcare analytics project built using Power BI with a **Star Schema data model, 100+ DAX measures, and incremental data refresh**.
 
@@ -99,15 +99,7 @@ This project analyzes healthcare sales data to track performance across products
 ## 📸 Dashboard Preview
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/48ae644e-f446-4987-91cb-12858264361d" width="600"/>
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/8f4d0c25-68e4-4355-bef1-f2eed92042f9" width="600"/>
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/6724e7a5-c5a1-4410-b366-a4aeab65e9be" width="600"/>
+   <img src="https://github.com/user-attachments/assets/e6c4f6a1-9f3f-43e5-90b1-8ac5933c1aa8" width="900"/>
 </p>
 
 ---
