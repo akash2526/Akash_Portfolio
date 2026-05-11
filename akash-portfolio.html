@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Akash Geeda | Power BI Enthusiast </title>
+<meta name="description" content="Akash Geeda – Support Engineer with 4 years experience. Specializing in Power BI, SQL, Python, Azure and business intelligence solutions."/>
+<meta name="keywords" content="Power BI Developer, Data Analyst, SQL Developer, Akash Geeda, Business Intelligence, Azure, Python"/>
+<meta property="og:title" content="Akash Geeda | Power BI Developer & Data Analyst"/>
+<meta property="og:description" content="4 years experience in Power BI, SQL, Linux ,Python, Azure. Support Engineer at Luxoft."/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#060810;
+  --bg2:#0d1117;
+  --bg3:#111827;
+  --surface:#151f2e;
+  --surface2:#1a2640;
+  --border:rgba(99,179,237,0.12);
+  --border2:rgba(99,179,237,0.22);
+  --accent:#3b82f6;
+  --accent2:#60a5fa;
+  --accent3:#93c5fd;
+  --gold:#f59e0b;
+  --green:#10b981;
+  --purple:#8b5cf6;
+  --text:#f1f5f9;
+  --text2:#94a3b8;
+  --text3:#64748b;
+  --font-display:'Syne',sans-serif;
+  --font-body:'DM Sans',sans-serif;
+  --radius:12px;
+  --radius-lg:20px;
+  --glow:0 0 40px rgba(59,130,246,0.15);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{border:none;cursor:pointer;font-family:var(--font-body)}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--surface2);border-radius:3px}
+
+/* ─── NAV ─── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2rem;height:68px;display:flex;align-items:center;justify-content:space-between;transition:all .3s ease;backdrop-filter:blur(0px)}
+nav.scrolled{background:rgba(6,8,16,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:var(--font-display);font-size:1.3rem;font-weight:800;letter-spacing:-0.02em}
+.nav-logo span{color:var(--accent)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:.875rem;font-weight:400;color:var(--text2);letter-spacing:0.02em;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{background:var(--accent);color:#fff;padding:.5rem 1.25rem;border-radius:8px;font-size:.875rem;font-weight:500;transition:all .2s}
+.nav-cta:hover{background:var(--accent2);transform:translateY(-1px)}
+.nav-mobile-btn{display:none;background:none;color:var(--text);font-size:1.4rem;padding:.25rem}
+.nav-mobile{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(6,8,16,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:1.5rem 2rem;z-index:999}
+.nav-mobile.open{display:block}
+.nav-mobile ul{list-style:none;display:flex;flex-direction:column;gap:1rem}
+.nav-mobile a{font-size:1rem;color:var(--text2)}
+
+/* ─── SECTIONS ─── */
+section{padding:6rem 0;position:relative}
+.container{max-width:1100px;margin:0 auto;padding:0 2rem}
+
+/* ─── HERO ─── */
+#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:6rem 2rem}
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none}
+.hero-orb-1{width:600px;height:600px;background:radial-gradient(circle,rgba(59,130,246,.18),transparent 70%);top:-100px;left:50%;transform:translateX(-50%)}
+.hero-orb-2{width:400px;height:400px;background:radial-gradient(circle,rgba(139,92,246,.12),transparent 70%);bottom:0;right:-100px}
+.hero-orb-3{width:300px;height:300px;background:radial-gradient(circle,rgba(16,185,129,.1),transparent 70%);bottom:100px;left:-50px}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.25);border-radius:100px;padding:.4rem 1rem;font-size:.8rem;font-weight:500;color:var(--accent3);margin-bottom:1.5rem;animation:fadeUp .8s ease both}
+.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+.hero-title{font-family:var(--font-display);font-size:clamp(2.8rem,7vw,5.5rem);font-weight:800;line-height:1.08;letter-spacing:-0.04em;margin-bottom:1.5rem;animation:fadeUp .8s .15s ease both}
+.hero-title-line2{display:block;background:linear-gradient(135deg,var(--accent) 0%,var(--purple) 50%,var(--gold) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:1.15rem;color:var(--text2);max-width:620px;margin:0 auto 2.5rem;font-weight:300;animation:fadeUp .8s .3s ease both}
+.hero-roles{display:flex;justify-content:center;flex-wrap:wrap;gap:.75rem;margin-bottom:2.5rem;animation:fadeUp .8s .45s ease both}
+.hero-role-tag{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.375rem .875rem;font-size:.8rem;font-weight:500;color:var(--text2)}
+.hero-cta-row{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;animation:fadeUp .8s .6s ease both}
+.btn-primary{background:var(--accent);color:#fff;padding:.875rem 2rem;border-radius:10px;font-size:.9rem;font-weight:500;transition:all .25s;display:inline-flex;align-items:center;gap:.5rem}
+.btn-primary:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 8px 30px rgba(59,130,246,.3)}
+.btn-secondary{background:transparent;color:var(--text);border:1px solid var(--border2);padding:.875rem 2rem;border-radius:10px;font-size:.9rem;font-weight:500;transition:all .25s;display:inline-flex;align-items:center;gap:.5rem}
+.btn-secondary:hover{background:var(--surface);border-color:var(--accent);transform:translateY(-2px)}
+.hero-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;margin-top:4rem;animation:fadeUp .8s .75s ease both}
+.hero-stat{text-align:center}
+.hero-stat-num{font-family:var(--font-display);font-size:2.2rem;font-weight:800;color:var(--text);display:block}
+.hero-stat-num .accent{color:var(--accent)}
+.hero-stat-label{font-size:.8rem;color:var(--text3);text-transform:uppercase;letter-spacing:.08em}
+
+/* ─── SECTION HEADER ─── */
+.section-tag{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem}
+.section-title{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:1rem}
+.section-sub{color:var(--text2);font-size:1.05rem;max-width:540px}
+.section-header{margin-bottom:3.5rem}
+.section-header.center{text-align:center}
+.section-header.center .section-sub{margin:0 auto}
+.section-divider{width:48px;height:3px;background:linear-gradient(90deg,var(--accent),var(--purple));border-radius:2px;margin:.75rem 0 1.25rem}
+.section-header.center .section-divider{margin-left:auto;margin-right:auto}
+
+/* ─── ABOUT ─── */
+#about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:4rem;align-items:center}
+.about-image-wrap{position:relative}
+.about-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;position:relative}
+.about-img-placeholder{height:380px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.about-img-bg{position:absolute;inset:0;background:linear-gradient(135deg,rgba(59,130,246,.15) 0%,rgba(139,92,246,.1) 50%,rgba(16,185,129,.1) 100%)}
+.about-initials{font-family:var(--font-display);font-size:5rem;font-weight:800;color:var(--accent);position:relative;z-index:1;opacity:.9}
+.about-badge-stack{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
+.about-badge{display:flex;align-items:center;gap:.75rem;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.75rem 1rem}
+.about-badge-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.about-badge-text{font-size:.85rem;font-weight:500}
+.about-badge-sub{font-size:.75rem;color:var(--text3)}
+.about-content p{color:var(--text2);margin-bottom:1.25rem;font-size:1rem}
+.about-highlights{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}
+.highlight-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem}
+.highlight-num{font-family:var(--font-display);font-size:1.6rem;font-weight:800;color:var(--accent)}
+.highlight-label{font-size:.8rem;color:var(--text3);margin-top:.15rem}
+
+/* ─── SKILLS ─── */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
+.skill-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;transition:all .25s;position:relative;overflow:hidden}
+.skill-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent,rgba(59,130,246,.04));opacity:0;transition:.3s}
+.skill-card:hover{border-color:var(--border2);transform:translateY(-3px);box-shadow:var(--glow)}
+.skill-card:hover::before{opacity:1}
+.skill-card-icon{font-size:2rem;margin-bottom:1rem}
+.skill-card-title{font-family:var(--font-display);font-size:1.05rem;font-weight:700;margin-bottom:1.25rem}
+.skill-tags{display:flex;flex-wrap:wrap;gap:.5rem}
+.skill-tag{background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.15);border-radius:6px;padding:.3rem .7rem;font-size:.78rem;font-weight:500;color:var(--accent3);transition:all .2s}
+.skill-tag:hover{background:rgba(59,130,246,.15)}
+.skill-tag.green{background:rgba(16,185,129,.08);border-color:rgba(16,185,129,.15);color:#6ee7b7}
+.skill-tag.purple{background:rgba(139,92,246,.08);border-color:rgba(139,92,246,.15);color:#c4b5fd}
+.skill-tag.gold{background:rgba(245,158,11,.08);border-color:rgba(245,158,11,.15);color:#fcd34d}
+
+/* ─── EXPERIENCE ─── */
+#experience{background:var(--bg2)}
+.timeline{position:relative;padding-left:2.5rem}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--border),var(--border),transparent)}
+.timeline-item{position:relative;padding-bottom:3rem}
+.timeline-item:last-child{padding-bottom:0}
+.timeline-dot{position:absolute;left:-2.8rem;top:.3rem;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg2);box-shadow:0 0 0 3px rgba(59,130,246,.2)}
+.timeline-period{font-size:.8rem;font-weight:500;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem}
+.timeline-role{font-family:var(--font-display);font-size:1.25rem;font-weight:700;margin-bottom:.25rem}
+.timeline-company{color:var(--text2);font-size:.9rem;margin-bottom:1rem}
+.timeline-body{color:var(--text2);font-size:.9rem}
+.timeline-achievements{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-top:1rem}
+.timeline-achievements li{display:flex;gap:.75rem;align-items:flex-start;font-size:.88rem;color:var(--text2)}
+.timeline-achievements li::before{content:'→';color:var(--accent);flex-shrink:0;margin-top:.1rem}
+.timeline-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
+.timeline-tag{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:.25rem .65rem;font-size:.75rem;color:var(--text3)}
+
+/* ─── PROJECTS ─── */
+.filter-bar{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.filter-btn{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.45rem 1rem;font-size:.825rem;font-weight:500;color:var(--text2);transition:all .2s;cursor:pointer}
+.filter-btn:hover,.filter-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.search-bar{display:flex;align-items:center;gap:.75rem;margin-bottom:2rem}
+.search-input{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.7rem 1rem;font-size:.9rem;color:var(--text);font-family:var(--font-body);outline:none;transition:border .2s}
+.search-input::placeholder{color:var(--text3)}
+.search-input:focus{border-color:var(--accent)}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.5rem}
+.project-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:all .3s;display:flex;flex-direction:column}
+.project-card:hover{border-color:rgba(59,130,246,.4);transform:translateY(-5px);box-shadow:0 20px 60px rgba(0,0,0,.4),var(--glow)}
+.project-thumb{height:200px;position:relative;overflow:hidden;background:var(--surface2)}
+.project-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.project-card:hover .project-thumb img{transform:scale(1.05)}
+.project-thumb-placeholder{height:100%;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.project-thumb-icon{font-size:3rem;position:relative;z-index:1}
+.project-thumb-bg{position:absolute;inset:0}
+.project-body{padding:1.5rem;display:flex;flex-direction:column;flex:1}
+.project-category{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+.project-title{font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:.75rem;line-height:1.3}
+.project-desc{font-size:.875rem;color:var(--text2);flex:1;margin-bottom:1.25rem;line-height:1.6}
+.project-kpis{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.25rem;padding-top:1rem;border-top:1px solid var(--border)}
+.project-kpi{text-align:center}
+.project-kpi-val{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--accent);display:block}
+.project-kpi-label{font-size:.7rem;color:var(--text3)}
+.project-tech{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.25rem}
+.project-tech-tag{background:var(--bg2);border:1px solid var(--border);border-radius:5px;padding:.2rem .6rem;font-size:.72rem;color:var(--text3)}
+.project-links{display:flex;gap:.75rem;margin-top:auto}
+.project-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:500;color:var(--text2);border:1px solid var(--border);border-radius:7px;padding:.4rem .85rem;transition:all .2s}
+.project-link:hover{color:var(--accent);border-color:var(--accent)}
+.project-card.hidden{display:none}
+
+/* ─── CERTIFICATIONS ─── */
+#certifications{background:var(--bg2)}
+.certs-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:2rem;
+    margin-top:3rem;
+}
+.cert-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius-lg);
+    padding:1.8rem;
+    display:flex;
+    gap:1.2rem;
+    align-items:flex-start;
+    transition:all .25s;
+    min-height:170px;
+}
+.cert-card:hover{border-color:var(--border2);transform:translateY(-2px)}
+.cert-logo{width:52px;height:52px;border-radius:10px;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+.cert-title{
+    font-size:1.1rem;
+    font-weight:700;
+    margin-bottom:.5rem;
+    line-height:1.5;
+}
+.cert-issuer{font-size:.78rem;color:var(--accent)}
+.cert-date{font-size:.75rem;color:var(--text3);margin-top:.25rem}
+.cert-card div{
+    flex:1;
+}
+
+/* ─── GITHUB STATS ─── */
+.github-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem;margin-bottom:2rem}
+.github-stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;transition:all .25s}
+.github-stat-card:hover{border-color:var(--border2);transform:translateY(-2px)}
+.github-stat-icon{font-size:1.75rem;margin-bottom:.75rem}
+.github-stat-num{font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--text);display:block}
+.github-stat-label{font-size:.8rem;color:var(--text3);margin-top:.25rem}
+.github-lang-row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
+.github-lang{display:flex;align-items:center;gap:.5rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.5rem 1rem;font-size:.85rem}
+.lang-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.github-contribution{margin-top:2.5rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center}
+.contribution-title{font-size:.85rem;color:var(--text2);margin-bottom:1rem}
+.contrib-grid{display:grid;grid-template-columns:repeat(52,1fr);gap:2px;overflow-x:auto}
+.contrib-cell{aspect-ratio:1;border-radius:2px;background:var(--surface2)}
+.contrib-cell.l1{background:rgba(59,130,246,.2)}
+.contrib-cell.l2{background:rgba(59,130,246,.4)}
+.contrib-cell.l3{background:rgba(59,130,246,.65)}
+.contrib-cell.l4{background:var(--accent)}
+
+/* ─── CONTACT ─── */
+#contact{background:var(--bg2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem}
+.contact-info h3{font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:.75rem}
+.contact-info p{color:var(--text2);margin-bottom:2rem}
+.contact-links{display:flex;flex-direction:column;gap:1rem}
+.contact-link-item{display:flex;align-items:center;gap:1rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;transition:all .25s}
+.contact-link-item:hover{border-color:var(--accent);transform:translateX(4px)}
+.contact-link-icon{width:40px;height:40px;border-radius:8px;background:rgba(59,130,246,.1);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.contact-link-label{font-size:.75rem;color:var(--text3)}
+.contact-link-val{font-size:.9rem;font-weight:500}
+.contact-form{display:flex;flex-direction:column;gap:1.25rem}
+.form-group{display:flex;flex-direction:column;gap:.5rem}
+.form-label{font-size:.85rem;font-weight:500;color:var(--text2)}
+.form-input,.form-textarea{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.875rem 1rem;font-size:.9rem;color:var(--text);font-family:var(--font-body);outline:none;transition:border .2s;width:100%}
+.form-input::placeholder,.form-textarea::placeholder{color:var(--text3)}
+.form-input:focus,.form-textarea:focus{border-color:var(--accent)}
+.form-textarea{height:130px;resize:vertical}
+.form-submit{background:var(--accent);color:#fff;padding:.9rem;border-radius:10px;font-size:.95rem;font-weight:500;font-family:var(--font-body);transition:all .25s;cursor:pointer}
+.form-submit:hover{background:var(--accent2);transform:translateY(-2px)}
+
+/* ─── FOOTER ─── */
+footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 0;text-align:center}
+.footer-content{color:var(--text3);font-size:.875rem}
+.footer-socials{display:flex;justify-content:center;gap:1rem;margin-bottom:1.5rem}
+.social-btn{width:42px;height:42px;border-radius:10px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;transition:all .25s;color:var(--text2)}
+.social-btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes counterUp{from{opacity:0}to{opacity:1}}
+
+.fade-in{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.fade-in.visible{opacity:1;transform:none}
+
+/* ─── LOADING ─── */
+#loading{position:fixed;inset:0;background:var(--bg);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .5s}
+.loader-ring{width:60px;height:60px;border:3px solid var(--surface2);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin-bottom:1.5rem}
+.loader-text{font-family:var(--font-display);font-size:.875rem;color:var(--text2);letter-spacing:.08em}
+
+/* ─── BACK TO TOP ─── */
+#btt{position:fixed;bottom:2rem;right:2rem;width:46px;height:46px;border-radius:50%;background:var(--accent);color:#fff;border:none;font-size:1.1rem;cursor:pointer;opacity:0;transform:translateY(10px);transition:all .3s;z-index:500;display:flex;align-items:center;justify-content:center}
+#btt.show{opacity:1;transform:none}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:900px){
+  .about-grid{grid-template-columns:1fr}
+  .about-img-placeholder{height:260px}
+  .contact-grid{grid-template-columns:1fr}
+  nav .nav-links,.nav-cta{display:none}
+  .nav-mobile-btn{display:block}
+}
+@media(max-width:600px){
+  .projects-grid{grid-template-columns:1fr}
+  .hero-stats{gap:1.5rem}
+  .skills-grid{grid-template-columns:1fr}
+  .certs-grid{grid-template-columns:1fr}
+  .github-grid{grid-template-columns:1fr 1fr}
+  .about-highlights{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loading">
+  <div class="loader-ring"></div>
+  <p class="loader-text">LOADING PORTFOLIO</p>
+</div>
+
+<!-- Back to Top -->
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<!-- ─── NAV ─── -->
+<nav id="navbar">
+  <div class="nav-logo">AG<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#github">GitHub</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://github.com/akash2526/Akash_Portfolio" target="_blank" class="nav-cta">Download Resume ↗</a>
+  <button class="nav-mobile-btn" onclick="toggleMobileNav()" aria-label="Menu">☰</button>
+</nav>
+<div class="nav-mobile" id="mobileNav">
+  <ul>
+    <li><a href="#about" onclick="closeMobileNav()">About</a></li>
+    <li><a href="#skills" onclick="closeMobileNav()">Skills</a></li>
+    <li><a href="#experience" onclick="closeMobileNav()">Experience</a></li>
+    <li><a href="#projects" onclick="closeMobileNav()">Projects</a></li>
+    <li><a href="#certifications" onclick="closeMobileNav()">Certifications</a></li>
+    <li><a href="#github" onclick="closeMobileNav()">GitHub</a></li>
+    <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-orb hero-orb-3"></div>
+
+  <div style="position:relative;z-index:1;width:100%;">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Open to new opportunities
+    </div>
+
+    <h1 class="hero-title">
+      Akash Geeda
+     <span class="hero-title-line2" style="font-size:70%;">Data Enthusiast</span>
+    </h1>
+
+    <p class="hero-sub">
+      Transforming raw data into strategic business intelligence. 4+ years crafting Power BI dashboards, optimizing SQL performance, and delivering insights that move the needle.
+    </p>
+
+
+
+    <div class="hero-cta-row">
+      <a href="#projects" class="btn-primary">View Projects →</a>
+      <a href="#contact" class="btn-secondary">Get in Touch</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num"><span class="counter accent" data-target="4">0</span><span class="accent">+</span></span>
+        <span class="hero-stat-label">Years Experience</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num"><span class="counter" data-target="100">0</span><span class="accent">+</span></span>
+        <span class="hero-stat-label">DAX Measures</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num"><span class="counter" data-target="3">0</span></span>
+        <span class="hero-stat-label">GitHub Repos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrap fade-in">
+        <div class="about-card">
+          <div class="about-img-placeholder">
+            <div class="about-img-bg" style="background:linear-gradient(135deg,rgba(59,130,246,.2),rgba(139,92,246,.15))"></div>
+            <span class="about-initials">AG</span>
+          </div>
+        </div>
+        <div class="about-badge-stack" style="margin-top:1rem">
+          <div class="about-badge">
+            <div class="about-badge-icon" style="background:rgba(59,130,246,.12)">📊</div>
+            <div>
+              <div class="about-badge-text">Support Engineer</div>
+              <div class="about-badge-sub">Luxoft · Current</div>
+            </div>
+          </div>
+          <div class="about-badge">
+            <div class="about-badge-icon" style="background:rgba(16,185,129,.12)">📍</div>
+            <div>
+              <div class="about-badge-text">Hyderabad, India</div>
+              <div class="about-badge-sub">Open to Remote & Relocation</div>
+            </div>
+          </div>
+          <div class="about-badge">
+            <div class="about-badge-icon" style="background:rgba(245,158,11,.12)">🎓</div>
+            <div>
+              <div class="about-badge-text">B.Tech Graduate</div>
+              <div class="about-badge-sub">Computer Science</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content fade-in">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Turning Data Into<br>Business Decisions</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <p>I'm a <strong>Support Engineer</strong> with 4 years of hands-on experience translating complex datasets into actionable business insights. Currently contributing as a Support Engineer at <strong>Luxoft</strong>, I specialize in building enterprise-grade dashboards, writing performant SQL, and automating data workflows.</p>
+
+        <p>My work spans healthcare analytics, retail behavior analysis, and sales intelligence — always with a focus on business impact, not just technical delivery. I believe the best dashboards are the ones that make decision-makers stop, look, and act.</p>
+
+        <p>Beyond BI, I work with <strong>Python for data wrangling</strong>, <strong>Azure for cloud pipelines</strong>, and <strong>Linux for DevOps automation</strong> — giving me a full-stack data perspective rare in dedicated BI roles.</p>
+
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-num">100+</div>
+            <div class="highlight-label">DAX measures written</div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-num">3</div>
+            <div class="highlight-label">Major project domains</div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-num">5+</div>
+            <div class="highlight-label">Tools mastered</div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-num">Star</div>
+            <div class="highlight-label">Schema architect</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ─── -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <span class="section-tag">Technical Skills</span>
+      <h2 class="section-title">My Tech Stack</h2>
+      <div class="section-divider"></div>
+      <p class="section-sub">A comprehensive toolkit built over 4 years of real-world data engineering and analytics work.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">📊</div>
+        <div class="skill-card-title">Business Intelligence</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">DAX</span>
+          <span class="skill-tag">Power Query (M)</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Report Builder</span>
+          <span class="skill-tag">Star Schema</span>
+          <span class="skill-tag">Incremental Refresh</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">🗄️</div>
+        <div class="skill-card-title">Databases & SQL</div>
+        <div class="skill-tags">
+          <span class="skill-tag green">SQL Server</span>
+          <span class="skill-tag green">T-SQL</span>
+          <span class="skill-tag green">PostgreSQL</span>
+          <span class="skill-tag green">Query Optimization</span>
+          <span class="skill-tag green">Stored Procedures</span>
+          <span class="skill-tag green">CTEs</span>
+          <span class="skill-tag green">Window Functions</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">🐍</div>
+        <div class="skill-card-title">Python & Analytics</div>
+        <div class="skill-tags">
+          <span class="skill-tag purple">Python</span>
+          <span class="skill-tag purple">Pandas</span>
+          <span class="skill-tag purple">NumPy</span>
+          <span class="skill-tag purple">Matplotlib</span>
+          <span class="skill-tag purple">Seaborn</span>
+          <span class="skill-tag purple">Jupyter</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">☁️</div>
+        <div class="skill-card-title">Cloud & Infrastructure</div>
+        <div class="skill-tags">
+          <span class="skill-tag gold">Azure</span>
+          <span class="skill-tag gold">Azure Data Factory</span>
+          <span class="skill-tag gold">Azure Synapse</span>
+          <span class="skill-tag gold">Linux</span>
+          <span class="skill-tag gold">Git</span>
+          <span class="skill-tag gold">Shell Scripting</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">📐</div>
+        <div class="skill-card-title">Data Modeling & ETL</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Star Schema</span>
+          <span class="skill-tag">Snowflake Schema</span>
+          <span class="skill-tag">ETL Pipelines</span>
+          <span class="skill-tag">Data Warehousing</span>
+          <span class="skill-tag">Excel / Power Pivot</span>
+          <span class="skill-tag">CSV / JSON</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">🎯</div>
+        <div class="skill-card-title">KPIs & Business Analysis</div>
+        <div class="skill-tags">
+          <span class="skill-tag green">KPI Design</span>
+          <span class="skill-tag green">YTD / MTD</span>
+          <span class="skill-tag green">Time Intelligence</span>
+          <span class="skill-tag green">Customer Segmentation</span>
+          <span class="skill-tag green">Revenue Analysis</span>
+          <span class="skill-tag green">Business Storytelling</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE ─── -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">Experience</span>
+      <h2 class="section-title">Career Timeline</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2024 – Present</div>
+        <div class="timeline-role">Support Engineer – Data & Analytics</div>
+        <div class="timeline-company">Luxoft · Full-time · Hyderabad, India</div>
+        <ul class="timeline-achievements">
+          <li>Processed, validated, reconciled, and transformed high-volume recurring datasets using Advanced Excel, consolidating multiple
+              client systems and external sources to ensure consistent, accurate, and reliable reporting, improving data integrity</li>
+          <li>Built a healthcare analytics solution using Star Schema with 100K+ fact rows and 100+ DAX measures for KPI tracking</li>
+          <li>Performed SQL query optimization reducing report load times by up to 40% on large datasets</li>
+          <li>Implemented incremental data refresh strategies for large-scale Power BI datasets (100K+ rows + 20K extensions)</li>
+          <li>Automated ETL pipelines using Python (Pandas) for data cleaning, transformation, and loading into SQL Server</li>
+          <li>Collaborated with cross-functional teams to translate business requirements into data models and dashboard designs</li>
+          <li>Supported Linux-based data infrastructure and Azure cloud data services</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Power BI</span>
+          <span class="timeline-tag">DAX</span>
+          <span class="timeline-tag">SQL Server</span>
+          <span class="timeline-tag">Python</span>
+          <span class="timeline-tag">Azure</span>
+          <span class="timeline-tag">Linux</span>
+          <span class="timeline-tag">Tableau</span>
+          <span class="timeline-tag">ETL</span>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot" style="background:var(--purple)"></div>
+        <div class="timeline-period">2022 – 2024</div>
+        <div class="timeline-role">Assistant System Engineer Analyst</div>
+        <div class="timeline-company">TCS · Analytics Track</div>
+        <ul class="timeline-achievements">
+          <li> Processed, validated, and reconciled high-volume transactional data using SQL and Excel, ensuring data accuracy and consistency
+               across multiple systems helped improve data retrieval performance by 15–20% and reduces incident resolution time</li>
+          <li>Analyzed large datasets primarily using SQL along with Advanced Excel to perform trend analysis, root cause analysis</li>
+          <li>Automated recurring reporting tasks using Excel (Pivot Tables, formulas, basic macros), reducing manual effort and improving
+              reporting efficiency by ~20–30 %</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="timeline-tag">SQL</span>
+          <span class="timeline-tag">Excel</span>
+          <span class="timeline-tag">Power BI</span>
+          <span class="timeline-tag">Python</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECTS ─── -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <span class="section-tag">Featured Projects</span>
+      <h2 class="section-title">Impact-Driven Work</h2>
+      <div class="section-divider"></div>
+      <p class="section-sub">Real projects, real business problems, measurable outcomes.</p>
+    </div>
+
+    <div class="search-bar fade-in">
+      <input type="text" class="search-input" id="projectSearch" placeholder="🔍 Search projects..." oninput="filterProjects()"/>
+    </div>
+
+    <div class="filter-bar fade-in">
+      <button class="filter-btn active" onclick="setFilter('all',this)">All Projects</button>
+      <button class="filter-btn" onclick="setFilter('powerbi',this)">Power BI</button>
+      <button class="filter-btn" onclick="setFilter('sql',this)">SQL</button>
+      <button class="filter-btn" onclick="setFilter('python',this)">Python</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- Project 1: Healthcare Analytics -->
+      <div class="project-card fade-in" data-category="powerbi sql" data-title="healthcare analytics dashboard">
+        <div class="project-thumb">
+          <div class="project-thumb-placeholder">
+            <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0c1445,#1a3a6b,#0f4c75)"></div>
+            <span class="project-thumb-icon">🏥</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-category">Power BI · Healthcare</div>
+          <h3 class="project-title">Healthcare Analytics Dashboard</h3>
+          <p class="project-desc">End-to-end Power BI solution analyzing healthcare sales across 28 global regions with a Star Schema data model, 100+ DAX measures, and incremental refresh for 120K+ rows of data.</p>
+          <div class="project-kpis">
+            <div class="project-kpi">
+              <span class="project-kpi-val">100K+</span>
+              <span class="project-kpi-label">Fact Rows</span>
+            </div>
+            <div class="project-kpi">
+              <span class="project-kpi-val">100+</span>
+              <span class="project-kpi-label">DAX Measures</span>
+            </div>
+            <div class="project-kpi">
+              <span class="project-kpi-val">28</span>
+              <span class="project-kpi-label">Regions</span>
+            </div>
+            <div class="project-kpi">
+              <span class="project-kpi-val">5</span>
+              <span class="project-kpi-label">Tables</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">Power BI</span>
+            <span class="project-tech-tag">DAX</span>
+            <span class="project-tech-tag">SQL Server</span>
+            <span class="project-tech-tag">Star Schema</span>
+            <span class="project-tech-tag">Incremental Refresh</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/akash2526/Akash_Portfolio" target="_blank" class="project-link">⭐ GitHub →</a>
+            <a href="https://akash2526.github.io/Akash_Portfolio/#Healthcare-project" target="_blank" class="project-link">📋 Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Customer Behavior -->
+      <div class="project-card fade-in" data-category="powerbi sql python" data-title="customer shopping behavior analysis">
+        <div class="project-thumb">
+          <div class="project-thumb-placeholder">
+            <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a0533,#3b0764,#2d1b69)"></div>
+            <span class="project-thumb-icon">🛍️</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-category">Python · SQL · Power BI</div>
+          <h3 class="project-title">Customer Shopping Behavior Analysis</h3>
+          <p class="project-desc">Full-stack analytics project analyzing 3,900 retail purchases. Python for ETL, SQL Server for business queries, and Power BI for interactive dashboards revealing customer segmentation and loyalty drivers.</p>
+          <div class="project-kpis">
+            <div class="project-kpi">
+              <span class="project-kpi-val">3,900</span>
+              <span class="project-kpi-label">Purchases</span>
+            </div>
+            <div class="project-kpi">
+              <span class="project-kpi-val">18</span>
+              <span class="project-kpi-label">Columns</span>
+            </div>
+            <div class="project-kpi">
+              <span class="project-kpi-val">9</span>
+              <span class="project-kpi-label">SQL Queries</span>
+            </div>
+            <div class="project-kpi">
+              <span class="project-kpi-val">3K+</span>
+              <span class="project-kpi-label">Loyal Customers</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">Python</span>
+            <span class="project-tech-tag">Pandas</span>
+            <span class="project-tech-tag">SQL Server</span>
+            <span class="project-tech-tag">Power BI</span>
+            <span class="project-tech-tag">Customer Segmentation</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/akash2526/Akash_Portfolio" target="_blank" class="project-link">⭐ GitHub →</a>
+            <a href="https://akash2526.github.io/Akash_Portfolio/#customer-project" target="_blank" class="project-link">📋 Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Pizza Sales -->
+      <div class="project-card fade-in" data-category="powerbi sql" data-title="pizza sales analysis">
+        <div class="project-thumb">
+          <div class="project-thumb-placeholder">
+            <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a0a00,#4a1700,#7c2d12)"></div>
+            <span class="project-thumb-icon">🍕</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-category">SQL · Power BI · Sales Analytics</div>
+          <h3 class="project-title">Pizza Sales Analysis Dashboard</h3>
+          <p class="project-desc">End-to-end sales analytics uncovering revenue trends, peak ordering hours, product performance, and customer preferences across pizza categories. SQL-driven insights visualized in Power BI.</p>
+          <div class="project-kpis">
+            <div class="project-kpi">
+              <span class="project-kpi-val">AOV</span>
+              <span class="project-kpi-label">Avg Order Value</span>
+            </div>
+            <div class="project-kpi">
+              <span class="project-kpi-val">4</span>
+              <span class="project-kpi-label">Categories</span>
+            </div>
+            <div class="project-kpi">
+              <span class="project-kpi-val">5</span>
+              <span class="project-kpi-label">Sizes Tracked</span>
+            </div>
+            <div class="project-kpi">
+              <span class="project-kpi-val">5+</span>
+              <span class="project-kpi-label">SQL Queries</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">SQL Server</span>
+            <span class="project-tech-tag">T-SQL</span>
+            <span class="project-tech-tag">Power BI</span>
+            <span class="project-tech-tag">Excel</span>
+            <span class="project-tech-tag">Revenue Analytics</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/akash2526/Akash_Portfolio" target="_blank" class="project-link">⭐ GitHub →</a>
+            <a href="https://akash2526.github.io/Akash_Portfolio/#-pizza-sales-analysis" target="_blank" class="project-link">📋 Details →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── CERTIFICATIONS ─── -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <span class="section-tag">Certifications</span>
+      <h2 class="section-title">Professional Credentials</h2>
+      <div class="section-divider"></div>
+    </div>
+
+   <div class="certs-grid">
+
+    <!-- PL-300 -->
+    <div class="cert-card fade-in">
+        <div class="cert-logo">📊</div>
+
+        <div>
+            <div class="cert-title">
+                Microsoft Power BI Data Analyst Associate (PL-300)
+            </div>
+
+            <div class="cert-issuer">Microsoft</div>
+
+            <div class="cert-date">Completed</div>
+        </div>
+    </div>
+
+    <!-- DP-900 -->
+    <div class="cert-card fade-in">
+        <div class="cert-logo">☁️</div>
+
+        <div>
+            <div class="cert-title">
+                Azure Data Fundamentals (DP-900)
+            </div>
+
+            <div class="cert-issuer">Microsoft Azure</div>
+
+            <div class="cert-date">Completed</div>
+        </div>
+    </div>
+
+    <!-- SQL -->
+    <div class="cert-card fade-in">
+        <div class="cert-logo">🗄️</div>
+
+        <div>
+            <div class="cert-title">
+                SQL for Data Analysis
+            </div>
+
+            <div class="cert-issuer">SQL Certification</div>
+
+            <div class="cert-date">Completed</div>
+        </div>
+    </div>
+
+</div>
+  </div>
+</section>
+
+<!-- ─── GITHUB STATS ─── -->
+<section id="github">
+  <div class="container">
+    
+    <div class="github-grid">
+      <div class="github-stat-card fade-in">
+        <div class="github-stat-icon">📁</div>
+        <span class="github-stat-num counter" data-target="3">0</span>
+        <span class="github-stat-label">Public Repositories</span>
+      </div>
+      <div class="github-stat-card fade-in">
+        <div class="github-stat-icon">⭐</div>
+        <span class="github-stat-num counter" data-target="12">0</span>
+        <span class="github-stat-label">Total Stars</span>
+      </div>
+      <div class="github-stat-card fade-in">
+        <div class="github-stat-icon">🔀</div>
+        <span class="github-stat-num counter" data-target="5">0</span>
+        <span class="github-stat-label">Forks</span>
+      </div>
+      <div class="github-stat-card fade-in">
+        <div class="github-stat-icon">✅</div>
+        <span class="github-stat-num counter" data-target="80">0</span>
+        <span class="github-stat-label">Contributions</span>
+      </div>
+    </div>
+
+    <div class="github-lang-row fade-in">
+      <div class="github-lang"><span class="lang-dot" style="background:#3572A5"></span>Python 38%</div>
+      <div class="github-lang"><span class="lang-dot" style="background:#e38c00"></span>SQL 32%</div>
+      <div class="github-lang"><span class="lang-dot" style="background:#f0db4f"></span>DAX / Power BI 20%</div>
+      <div class="github-lang"><span class="lang-dot" style="background:#89d185"></span>Markdown 10%</div>
+    </div>
+
+    <div class="github-contribution fade-in" style="margin-top:2rem">
+      <p class="contribution-title">GitHub Contribution Activity (Past Year)</p>
+      <div class="contrib-grid" id="contribGrid"></div>
+      <p style="font-size:.75rem;color:var(--text3);margin-top:.75rem">
+        View full profile: <a href="https://github.com/akash2526" target="_blank" style="color:var(--accent)">github.com/akash2526 →</a>
+      </p>
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem" class="fade-in">
+      <a href="https://github.com/akash2526" target="_blank" class="btn-primary">View GitHub Profile →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title">Let's Work Together</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <h3>Ready to Build Something Meaningful?</h3>
+        <p>Whether you're looking for a Power BI Developer, a Data Analyst, or a SQL specialist — I'd love to hear about your project or opportunity.</p>
+
+        <div class="contact-links">
+          <a href="mailto:akashgeeda18@gmail.com" class="contact-link-item">
+            <div class="contact-link-icon">📧</div>
+            <div>
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-val">akashgeeda18@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/akash-geeda/" target="_blank" class="contact-link-item">
+            <div class="contact-link-icon">💼</div>
+            <div>
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-val">linkedin.com/in/akash-geeda</div>
+            </div>
+          </a>
+          <a href="https://github.com/akash2526" target="_blank" class="contact-link-item">
+            <div class="contact-link-icon">🐙</div>
+            <div>
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-val">github.com/akash2526</div>
+            </div>
+          </a>
+          <a href="https://akash2526.github.io/Akash_Portfolio/" target="_blank" class="contact-link-item">
+            <div class="contact-link-icon">🌐</div>
+            <div>
+              <div class="contact-link-label">Portfolio Site</div>
+              <div class="contact-link-val">akash2526.github.io/Akash_Portfolio</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="fade-in">
+        <div class="contact-form fade-in">
+
+    <div class="contact-card">
+
+        <h3>Open to Opportunities</h3>
+
+        <p>
+            Currently open for Power BI Developer, Data Analyst,
+            SQL Developer, and Business Intelligence opportunities.
+        </p>
+
+        <div class="availability">
+            Available for:
+        </div>
+
+        <ul class="availability-list">
+            <li>✔ Full-Time Roles</li>
+            <li>✔ Remote Opportunities</li>
+            <li>✔ Freelance Projects</li>
+            <li>✔ Power BI Dashboard Development</li>
+        </ul>
+
+    </div>
+
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="container">
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/akash-geeda/" target="_blank" class="social-btn" title="LinkedIn">in</a>
+      <a href="https://github.com/akash2526" target="_blank" class="social-btn" title="GitHub">gh</a>
+      <a href="mailto:akashgeeda18@gmail.com" class="social-btn" title="Email">@</a>
+    </div>
+    <div class="footer-content">
+      <p style="margin-bottom:.5rem;font-weight:500;color:var(--text2)">Akash Geeda · Power BI Developer & Data Analyst</p>
+      <p>Built with care. Powered by data. Open to opportunities.</p>
+      <p style="margin-top:.5rem">Hyderabad, India · akashgeeda18@gmail.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ─── LOADING SCREEN ───
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    const l=document.getElementById('loading');
+    l.style.opacity='0';
+    setTimeout(()=>{l.style.display='none'},500);
+  },800);
+});
+
+// ─── NAV SCROLL ───
+const navbar=document.getElementById('navbar');
+window.addEventListener('scroll',()=>{
+  navbar.classList.toggle('scrolled',window.scrollY>40);
+  document.getElementById('btt').classList.toggle('show',window.scrollY>400);
+});
+
+// ─── MOBILE NAV ───
+function toggleMobileNav(){
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+function closeMobileNav(){
+  document.getElementById('mobileNav').classList.remove('open');
+}
+
+// ─── INTERSECTION OBSERVER (fade-in) ───
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      if(e.target.querySelector('.counter')||e.target.classList.contains('counter')){
+        startCounters(e.target);
+      }
+    }
+  });
+},{threshold:.12});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+
+// ─── COUNTERS ───
+function startCounters(root){
+  const els=root.querySelectorAll?root.querySelectorAll('.counter'):[root];
+  els.forEach(el=>{
+    if(el._counted)return;
+    el._counted=true;
+    const target=+el.dataset.target;
+    let current=0;
+    const step=Math.ceil(target/40);
+    const t=setInterval(()=>{
+      current=Math.min(current+step,target);
+      el.textContent=current;
+      if(current>=target)clearInterval(t);
+    },30);
+  });
+}
+// Also trigger for hero on load
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.counter').forEach(el=>{
+    const target=+el.dataset.target;
+    let current=0;
+    const step=Math.ceil(target/40);
+    const t=setInterval(()=>{
+      current=Math.min(current+step,target);
+      el.textContent=current;
+      if(current>=target)clearInterval(t);
+    },30);
+  });
+});
+
+// ─── PROJECT FILTER ───
+let currentFilter='all';
+function setFilter(cat,btn){
+  currentFilter=cat;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  filterProjects();
+}
+function filterProjects(){
+  const q=document.getElementById('projectSearch').value.toLowerCase();
+  document.querySelectorAll('.project-card').forEach(card=>{
+    const cats=card.dataset.category||'';
+    const title=card.dataset.title||'';
+    const matchCat=currentFilter==='all'||cats.includes(currentFilter);
+    const matchQ=!q||title.includes(q)||cats.includes(q);
+    card.classList.toggle('hidden',!(matchCat&&matchQ));
+  });
+}
+
+// ─── CONTRIBUTION GRID ───
+(function buildContribGrid(){
+  const grid=document.getElementById('contribGrid');
+  if(!grid)return;
+  const levels=['','l1','l2','l3','l4'];
+  const weights=[3,2,2,1.5,1];
+  const total=52*7;
+  for(let i=0;i<total;i++){
+    const cell=document.createElement('div');
+    const roll=Math.random()*10;
+    let lvl='';
+    if(roll>8.5)lvl='l4';
+    else if(roll>7)lvl='l3';
+    else if(roll>5)lvl='l2';
+    else if(roll>3)lvl='l1';
+    cell.className='contrib-cell'+(lvl?' '+lvl:'');
+    grid.appendChild(cell);
+  }
+})();
+
+// ─── CONTACT FORM ───
+function handleFormSubmit(e){
+  e.preventDefault();
+  const btn=document.getElementById('formSubmitBtn');
+  btn.textContent='Sending...';
+  btn.disabled=true;
+  setTimeout(()=>{
+    btn.textContent='✓ Message Sent!';
+    btn.style.background='var(--green)';
+    setTimeout(()=>{
+      btn.textContent='Send Message →';
+      btn.style.background='';
+      btn.disabled=false;
+      e.target.reset();
+    },3000);
+  },1500);
+}
+
+// ─── SMOOTH ACTIVE NAV LINKS ───
+const sections=document.querySelectorAll('section[id]');
+window.addEventListener('scroll',()=>{
+  const pos=window.scrollY+100;
+  sections.forEach(s=>{
+    const top=s.offsetTop;
+    const bottom=top+s.offsetHeight;
+    const link=document.querySelector(`nav a[href="#${s.id}"]`);
+    if(link){
+      link.style.color=pos>=top&&pos<bottom?'var(--text)':'';
+    }
+  });
+},{passive:true});
+</script>
+</body>
+</html>
